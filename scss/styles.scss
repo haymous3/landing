@@ -1,0 +1,468 @@
+$primary_color: #F7F9FC;
+$secondary_color: #f3f6ff;
+$text_color: #0B081D;
+$accent_color: #4F46E5;
+$white_color: #ffffff;
+$bg_color: #f3f6ff;
+$font_family: Manrope;
+$font_weight: 600;
+$gray_color: #9397AD;
+$icon_bg: rgb(99,102, 241);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  $font_family;
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+  
+}
+
+
+
+@mixin Buttons {
+   
+    background-color: $accent_color;
+    color: $white_color;
+    border-color: $accent_color;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0.75em 2em 0.75em 2em;
+    font-weight: $font_weight;
+
+}
+
+
+
+
+.header_section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $white_color;
+    height: 7rem;
+    // color: $white_color;
+    font-size: 1.1rem;
+
+
+    &_logo{
+        width: fit-content;
+
+    }
+
+    &_navs{
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+
+            li{
+                padding: 0px 3rem;
+                list-style-type: none;
+                font-weight: $font_weight;
+            }
+        }
+
+    }
+
+    &_btn{
+        button{
+            @include Buttons;
+            font-size: 1.1rem;
+        }
+
+        button:hover{
+            // background-color: $sky_blue;
+            color: $white_color;
+            // border-color: $sky_blue;
+        }
+
+        
+    }
+
+    
+    
+   
+}
+
+
+
+.section_one, .section_four{
+
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    height: 39rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+
+    &_bg_layout{
+        background: linear-gradient(180deg, rgba(11, 15, 25, 0.58) 0%, rgba(11, 15, 25, 0.78) 100%) !important;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    &_text{
+        display: flex;
+        justify-content: center;
+        // height: 100vh;
+        width: 50%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        align-items: center;
+        color: $white_color;
+        z-index: 3;
+        position: relative;
+
+
+        h2{
+            font-size: 4rem;
+            line-height: 7rem;
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+            font-weight: 400;
+            padding-top: 2rem;
+            line-height: 1.6rem;
+        }
+       
+    }
+    
+}
+
+
+.section_two{
+    display: flex;
+    justify-content: space-around;
+    padding: 8rem 8rem 0 8rem;
+
+
+    &_text{
+        width: 40%;
+
+        h2{
+            font-size: 2.7rem;
+            padding-bottom: 1.5rem;
+        }
+
+        p{
+            line-height: 2rem;
+            padding: 1rem 5rem 3rem 0rem;
+        }
+        button{
+            @include Buttons;
+            padding: 1.5em 3em 1.5em 3em !important; 
+        }
+
+
+
+    }
+
+    &_img{
+        width: 45%;
+        object-fit: contain;
+        object-position: center;
+
+
+        img{
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+
+.section_three{
+    position: relative;
+    padding: 12rem 8rem 5rem;
+    z-index: -1;
+    top: -7rem;
+    background-color: #f3f6ff;
+
+    &_intro, &_end{
+        // padding-left: 3rem;
+        line-height: 2rem;
+        padding-bottom: 3rem;
+        width: 70%;
+
+        h2{
+            font-size: 2rem;
+            padding-bottom:2rem;
+            font-weight: bolder;
+        }
+
+    }
+
+
+    &_contents{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+
+        &_one, &_two, &_three, &_four, &_five, &_six{
+            width: 44%;
+            margin-top: 5rem;
+            background-color: #fff;
+            box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%) !important;
+            padding: 3.5rem 1.5rem 1.5rem;
+            position: relative;
+            border-radius: 0.5rem;
+           
+
+            >:first-child{
+                position: absolute;
+                top: -3rem;
+                padding: 1rem;
+                background-color: $icon_bg;
+                box-shadow: 0 0.5rem 1.125rem -0.5rem rgb(99 102 241 / 90%) 
+            }
+
+            >:nth-child(2){
+                p{
+                    padding-top: 1rem;
+                    line-height: 1.6rem;
+                    font-weight: 100;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+
+
+    }
+
+
+    &_end{
+        position: relative;
+        top: 5rem;
+    }
+}
+
+
+
+.section_four{
+    background-image: url(../images/case-study02.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 39rem !important;
+    display: block;
+   
+    margin-top: -7rem;
+
+
+
+    &_bg_layout{
+        // background-color: #0b0f19 !important;
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &_text{
+ 
+    width: 30% !important;
+    color: #000 !important;
+    background: #fff;
+    display: block !important;
+    margin: 4rem 0 4rem 5rem;
+    z-index: 3;
+    position: absolute;
+    padding: 2rem 2rem;
+    line-height: 4rem;
+    border-radius: 1rem;
+
+
+        p{
+            text-align: start !important;
+        }
+
+        img{
+            width: 18%;
+        }
+
+        h3{
+            font-size: 2rem;
+            text-align: center;
+        }
+        h4{
+            text-align: center;
+        }
+
+        button{
+            @include Buttons;
+        }
+    }
+
+
+}
+
+.section_five{
+    padding: 10rem 8rem 4rem 8rem;
+
+    &_title{
+        text-align: center;
+        line-height: 3rem;
+
+
+        h3{
+            font-size: 2rem;
+        }
+
+        p{
+            color: $gray_color;
+        }
+
+    }
+
+
+    &_content{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+     
+
+
+        &_one, &_two, &_three, &_four{
+            width: 19%;
+            border-right: 1px solid $gray_color;
+            text-align: center;
+            padding: 2rem;
+
+            >:first-child{
+                box-shadow: 0 0.275rem 0.75rem -0.0625rem rgb(11 15 25 / 6%), 0 0.125rem 0.4rem -0.0625rem rgb(11 15 25 / 3%) !important;
+                width: 70px;
+                margin: 1rem auto;
+                height: 70px;
+                justify-content: center;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+
+            }
+            
+            
+            
+        }
+
+        &_four{
+            border-right: none !important;
+        }
+    
+
+    }
+}
+
+.section_six{
+ 
+    padding: 5rem 5.5rem 0rem 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+    .sponsor_logo{
+        width: 12%;
+        padding: 2rem 1rem;
+        border: 1px solid #e2e5f1;;
+
+        img{
+            width: 100%;
+        }
+    
+        
+    }
+}
+
+
+.section_seven{
+    background-color: #0b0f19 !important;
+    text-align: center;
+    padding: 4rem 0 3rem 0;
+    opacity: 0.93;
+    line-height: 5rem;
+    word-spacing: 1rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 2rem;
+
+    h4{
+        color: $gray_color
+    }
+
+    button{
+        @include Buttons;
+        padding: 1rem 4rem !important;
+        font-size: 1rem;
+    }
+}
+
+
+.section_eight{
+    padding: 4rem 0 3rem 0;
+    display: flex;
+    justify-content: space-around;
+  color: $white_color;
+    background-color: #0b0f19 !important;
+
+    &_intro, &_navs, &_contact{
+        width: 30%;
+    }
+
+
+    &_intro{
+        line-height: 2rem;
+        p{
+            padding-top: 2rem;
+        }
+        button{
+            @include Buttons;
+        }
+        input{
+            height: 2.5rem;
+            width: 18rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            border: $white_color;
+            padding-left: 2rem;
+            background: transparent;
+            color: $white_color;
+        }
+
+    }
+
+    &_navs{
+        ul{
+            height: 2.5rem;
+            width: 18rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            border: transparent;
+            padding-left: 2rem;
+
+            li{
+                color: $gray_color;
+                font-weight: bolder;
+            }
+        }
+    }
+
+}
