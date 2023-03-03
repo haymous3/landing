@@ -242,6 +242,17 @@
   flex-wrap: wrap;
   margin-top: 4rem;
 }
+.section_five_content .about {
+  width: 28% !important;
+  margin-bottom: 8rem;
+  line-height: 2rem;
+}
+.section_five_content .about p {
+  color: #9397AD;
+}
+.section_five_content .about > :first-child {
+  box-shadow: none !important;
+}
 .section_five_content_one, .section_five_content_two, .section_five_content_three, .section_five_content_four {
   width: 19%;
   border-right: 1px solid #9397AD;
@@ -347,4 +358,72 @@
 .section_eight_navs ul li {
   color: #9397AD;
   font-weight: bolder;
+}
+
+.about_section_one {
+  background-image: url(../images/hero-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+}
+.about_section_one_text {
+  width: 35%;
+  padding: 6rem;
+}
+.about_section_one_text > p {
+  padding: 4rem 0 10rem;
+  line-height: 2.5rem;
+}
+.about_section_one_text_one {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about_section_one_text_one > :first-child, .about_section_one_text_one > :nth-child(2), .about_section_one_text_one > :nth-child(3) {
+  line-height: 2rem;
+}
+.about_section_one_img {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.about_section_one_img > :first-child {
+  width: 40%;
+  line-height: 5rem;
+  position: relative;
+  top: 6rem;
+}
+.about_section_one_img > :first-child img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.about_section_one_img > :last-child {
+  width: 40%;
+  line-height: 5rem;
+  position: relative;
+  top: 1rem;
+}
+.about_section_one_img > :last-child img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.about_section_leadership {
+  text-align: center;
+  padding: 4rem;
+}
+.about_section_leadership_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.about_section_leadership_wrapper_one, .about_section_leadership_wrapper_two, .about_section_leadership_wrapper_three, .about_section_leadership_wrapper_four, .about_section_leadership_wrapper_five, .about_section_leadership_wrapper_six, .about_section_leadership_wrapper_seven, .about_section_leadership_wrapper_eight {
+  width: 21%;
+  line-height: 2.5rem;
+  margin: 3rem 0;
+}
+.about_section_leadership_wrapper_one img, .about_section_leadership_wrapper_two img, .about_section_leadership_wrapper_three img, .about_section_leadership_wrapper_four img, .about_section_leadership_wrapper_five img, .about_section_leadership_wrapper_six img, .about_section_leadership_wrapper_seven img, .about_section_leadership_wrapper_eight img {
+  width: 100%;
+  border-radius: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */
