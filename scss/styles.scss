@@ -266,7 +266,8 @@ $icon_bg: rgb(99,102, 241);
     height: 39rem !important;
     display: block;
    
-    margin-top: -7rem;
+    margin-top: -5rem;
+    margin-bottom: 3rem;
 
 
 
@@ -495,13 +496,14 @@ $icon_bg: rgb(99,102, 241);
     background-image: url(../images/hero-bg.svg);
     // object-fit: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    // background-position: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     &_text{
-        width: 35%;
-        padding: 6rem;
+        width: 100%;
+        padding: 0rem 0rem 0rem 2rem;
         // line-height: 2rem;
 
         >p{
@@ -835,8 +837,8 @@ $icon_bg: rgb(99,102, 241);
             margin-top: 0;
          
                 .about{
-                    width: 28% !important;
-                    margin-bottom: 8rem;
+                    width: 100% !important;
+                    margin-bottom: 0rem;
                     line-height: 2rem;
     
                     p{
@@ -855,6 +857,10 @@ $icon_bg: rgb(99,102, 241);
             &_one, &_two, &_three, &_four{
                 width: 100%;
                 border-right: none;
+
+                i{
+                    font-size: 2rem;
+                }
                 
     
     
@@ -951,6 +957,89 @@ $icon_bg: rgb(99,102, 241);
     
     }
 
+    .about_section_one{
+    
+    
+        &_text{
+            width: 100%;
+            padding: 0rem 2rem 0rem 2rem;
+         
+    
+    
+    
+            &_one{
+         
+                margin-top: -8rem;
+               
+    
+                >:first-child, >:nth-child(2), >:nth-child(3){
+                    line-height: 1.5rem;
+                    width: 20%;
+                }
+    
+            }
+        }
+    
+         &_img{
+             width: 100%;
+        
+    
+         >:first-child{
+             
+            padding: 1rem 1rem;
+            top: 1rem;
+           
+         }
+         >:last-child{
+            
+             padding: 1rem 1rem;
+             top: 1rem;
+           
+    
+    }
+     }
+    }
+    .about_section_leadership{
+       
+        padding: 4rem 2rem;
+    
+    
+        &_wrapper{
+           
+    
+    
+    
+            &_one, &_two, &_three, &_four, &_five, &_six, &_seven, &_eight{
+                width: 100%;
+                
+                 margin: 1rem 0;
+            
+            }
+        }
+    
+    }
+    .about_section_contact{
+ 
+        width: 90%;
+        margin: 0 auto;
+       
+        &_content{
+           
+            padding: 5.5rem 2rem;
+                
+            >:first-child{
+              
+                p{
+                    line-height: 3rem;
+                    font-size: 1rem;
+                }
+    
+            }
+        }
+    }
+
+   
+    
     
 }
 

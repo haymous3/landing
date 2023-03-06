@@ -183,7 +183,8 @@
   left: 0;
   height: 39rem !important;
   display: block;
-  margin-top: -7rem;
+  margin-top: -5rem;
+  margin-bottom: 3rem;
 }
 .section_four_bg_layout {
   opacity: 0.7;
@@ -367,13 +368,13 @@
 .about_section_one {
   background-image: url(../images/hero-bg.svg);
   background-repeat: no-repeat;
-  background-position: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .about_section_one_text {
-  width: 35%;
-  padding: 6rem;
+  width: 100%;
+  padding: 0rem 0rem 0rem 2rem;
 }
 .about_section_one_text > p {
   padding: 4rem 0 10rem;
@@ -569,8 +570,8 @@
     margin-top: 0;
   }
   .section_five_content .about {
-    width: 28% !important;
-    margin-bottom: 8rem;
+    width: 100% !important;
+    margin-bottom: 0rem;
     line-height: 2rem;
   }
   .section_five_content .about p {
@@ -582,6 +583,9 @@
   .section_five_content_one, .section_five_content_two, .section_five_content_three, .section_five_content_four {
     width: 100%;
     border-right: none;
+  }
+  .section_five_content_one i, .section_five_content_two i, .section_five_content_three i, .section_five_content_four i {
+    font-size: 2rem;
   }
   .section_six {
     margin-top: -2rem;
@@ -639,5 +643,45 @@
   }
   .section_eight_contacts {
     margin-top: 3rem;
+  }
+  .about_section_one_text {
+    width: 100%;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  .about_section_one_text_one {
+    margin-top: -8rem;
+  }
+  .about_section_one_text_one > :first-child, .about_section_one_text_one > :nth-child(2), .about_section_one_text_one > :nth-child(3) {
+    line-height: 1.5rem;
+    width: 20%;
+  }
+  .about_section_one_img {
+    width: 100%;
+  }
+  .about_section_one_img > :first-child {
+    padding: 1rem 1rem;
+    top: 1rem;
+  }
+  .about_section_one_img > :last-child {
+    padding: 1rem 1rem;
+    top: 1rem;
+  }
+  .about_section_leadership {
+    padding: 4rem 2rem;
+  }
+  .about_section_leadership_wrapper_one, .about_section_leadership_wrapper_two, .about_section_leadership_wrapper_three, .about_section_leadership_wrapper_four, .about_section_leadership_wrapper_five, .about_section_leadership_wrapper_six, .about_section_leadership_wrapper_seven, .about_section_leadership_wrapper_eight {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .about_section_contact {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about_section_contact_content {
+    padding: 5.5rem 2rem;
+  }
+  .about_section_contact_content > :first-child p {
+    line-height: 3rem;
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=styles.css.map */
