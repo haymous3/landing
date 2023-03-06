@@ -21,6 +21,13 @@ $icon_bg: rgb(99,102, 241);
   
 }
 
+.bg{
+    background: $white_color !important;
+}
+
+.cl{
+    color: white !important;
+}
 
 
 @mixin Buttons {
@@ -34,18 +41,79 @@ $icon_bg: rgb(99,102, 241);
 
 }
 
+.active{
+    width: 2rem !important;
+    height: 2rem !important;
+    transition: ease-in-out 10s;
+    :first-child{
+        transform: rotate(45deg) !important;
+        margin-top: 0.9rem !important;
+    }
+
+    :nth-child(2){
+        display: none !important;
+    }
+
+    :last-child{
+        transform: rotate(-45deg) !important;
+        margin-top: -0.2rem !important;
+    }
+}
+
+
+.show{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 3rem;
+   
+   
+
+
+    ul{
+        width: 100%;
+        font-size: 1.4rem;
+        line-height: 3rem;
+        padding: 8rem 0 1rem;
+    }
+}
 
 
 
 .header_section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: $white_color;
+    background-color: #ffffff;
+    padding: 0 7rem;
     height: 7rem;
-    // color: $white_color;
     font-size: 1.1rem;
+
+    &_bars{
+        display: none;
+        width: fit-content;
+        z-index: 5;
+        
+        right: 1rem;
+        top: 2.3rem;
+        position: absolute;
+        &_one, &_two, &_three{
+            width: 2rem;
+            display: block;
+            height: 0.15rem;
+            margin-top:0.3rem;
+            background: $text_color;
+          
+           
+
+        }
+        
+    }
 
 
     &_logo{
@@ -54,20 +122,24 @@ $icon_bg: rgb(99,102, 241);
     }
 
     &_navs{
+        display: flex;
+        align-items: center;
+        width: 75%;
+
 
         ul{
             display: flex;
-            justify-content: space-between;
-            list-style-type: none;
-
-            li{
-                padding: 0px 3rem;
-                list-style-type: none;
-                font-weight: $font_weight;
-            }
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            width: 100%
         }
+       
 
+        
     }
+
+  
 
     &_btn{
         button{
@@ -88,7 +160,6 @@ $icon_bg: rgb(99,102, 241);
     
    
 }
-
 
 
 .section_one, .section_four{
@@ -252,7 +323,6 @@ $icon_bg: rgb(99,102, 241);
         top: 5rem;
     }
 }
-
 
 
 .section_four{
@@ -502,8 +572,8 @@ $icon_bg: rgb(99,102, 241);
     justify-content: space-between;
 
     &_text{
-        width: 100%;
-        padding: 0rem 0rem 0rem 2rem;
+        width: 40%;
+        padding: 8rem 4rem 5rem 4rem;
         // line-height: 2rem;
 
         >p{
@@ -628,57 +698,37 @@ $icon_bg: rgb(99,102, 241);
 // Media Queries
 
 @media only screen and (max-width:767px){
-    // .header_section{
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     justify-content: space-around;
-    //     align-items: center;
-    //     background-color: $white_color;
-    //     height: 7rem;
-    //     // color: $white_color;
-    //     font-size: 1.1rem;
-    
-    
-    //     &_logo{
-    //         width: fit-content;
-    
-    //     }
-    
-    //     &_navs{
-    
-    //         ul{
-    //             display: flex;
-    //             justify-content: space-between;
-    //             list-style-type: none;
-    
-    //             li{
-    //                 padding: 0px 3rem;
-    //                 list-style-type: none;
-    //                 font-weight: $font_weight;
-    //             }
-    //         }
-    
-    //     }
-    
-    //     &_btn{
-    //         button{
-    //             @include Buttons;
-    //             font-size: 1.1rem;
-    //         }
-    
-    //         button:hover{
-    //             // background-color: $sky_blue;
-    //             color: $white_color;
-    //             // border-color: $sky_blue;
-    //         }
-    
-            
-    //     }
-    
-        
-        
+    .header_section{
+        padding: 0 1rem;
        
-    // }
+        &_bars{
+            display: block;
+          
+        }
+    
+        &_navs{
+            display: none;
+            z-index: 4;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,.95);
+    
+    
+            :nth-child(2){
+                color: $white_color;
+            }
+
+            ul{
+                display: block;
+            }
+             
+        }
+      
+       
+    }
 
     .section_one, .section_four{
 
@@ -962,7 +1012,7 @@ $icon_bg: rgb(99,102, 241);
     
         &_text{
             width: 100%;
-            padding: 0rem 2rem 0rem 2rem;
+            padding: 3rem 2rem 2rem 2rem;
          
     
     
