@@ -636,7 +636,6 @@
 }
 .sign_in_details > :last-child a {
   text-align: center;
-  display: block;
   width: 60%;
   color: #4F46E5;
 }
