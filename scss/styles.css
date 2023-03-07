@@ -586,6 +586,100 @@
   margin-top: 0.5rem;
 }
 
+.sign_in {
+  display: flex;
+  justify-content: space-between;
+  height: 90vh;
+}
+.sign_in_details {
+  padding: 3rem 8rem;
+  width: 50%;
+}
+.sign_in_details a {
+  color: #4F46E5;
+}
+.sign_in_details > :first-child {
+  line-height: 3rem;
+}
+.sign_in_details > :last-child {
+  line-height: 2rem;
+}
+.sign_in_details > :last-child input[type=email] {
+  height: 3rem;
+  outline: none;
+  width: 60%;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+  border: 1px solid #d4d7e5;
+}
+.sign_in_details > :last-child input[type=password] {
+  height: 3rem;
+  outline: none;
+  width: 60%;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+  border: 1px solid #d4d7e5;
+}
+.sign_in_details > :last-child button {
+  background-color: #4F46E5;
+  color: #ffffff;
+  border-color: #4F46E5;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0.75em 2em 0.75em 2em;
+  font-weight: 600;
+  display: block;
+  width: 60%;
+  margin-top: 1rem;
+  border: 1px solid transparent;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+.sign_in_details > :last-child a {
+  text-align: center;
+  display: block;
+  width: 60%;
+  color: #4F46E5;
+}
+.sign_in_details > :last-child > :last-child {
+  width: 50%;
+  text-align: center;
+  margin-top: 1rem;
+  border-top: 1px solid #e2e5f1;
+  padding-top: 1rem;
+}
+.sign_in_details > :last-child > :last-child div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sign_in_details > :last-child > :last-child div button {
+  width: 47%;
+  background-color: #4F46E5;
+  color: #ffffff;
+  border-color: #4F46E5;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0.75em 2em 0.75em 2em;
+  font-weight: 600;
+  background: #eff2fc;
+  color: #33354D;
+  border: 1px solid #eff2fc;
+}
+.sign_in_bg {
+  width: 50%;
+  background-image: url(../images/signin-bg.jpg);
+  position: absolute;
+  height: 100%;
+  right: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sign_in_bg img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 @media only screen and (max-width: 767px) {
   .header_section {
     padding: 0 1rem;
@@ -853,5 +947,56 @@
   }
   .contact_form > :last-child button {
     margin-bottom: 1rem;
+  }
+  .sign_in {
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+  }
+  .sign_in_details {
+    padding: 3rem 1rem;
+    width: 100%;
+  }
+  .sign_in_details > :first-child {
+    line-height: 2rem;
+    text-align: center;
+  }
+  .sign_in_details > :last-child {
+    line-height: 1rem;
+  }
+  .sign_in_details > :last-child input[type=email] {
+    height: 2.5rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .sign_in_details > :last-child input[type=password] {
+    height: 2.5rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .sign_in_details > :last-child button {
+    background-color: #4F46E5;
+    color: #ffffff;
+    border-color: #4F46E5;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0.75em 2em 0.75em 2em;
+    font-weight: 600;
+    width: 100%;
+  }
+  .sign_in_details > :last-child a {
+    width: 100%;
+  }
+  .sign_in_details > :last-child > :last-child {
+    width: 100%;
+  }
+  .sign_in_details > :last-child > :last-child div button {
+    width: 100%;
+    background: #eff2fc;
+    color: #33354D;
+    border: 1px solid #eff2fc;
+    margin-bottom: 1.5rem;
+  }
+  .sign_in_bg {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
