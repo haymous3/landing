@@ -529,6 +529,63 @@
   border: 1px solid #fff !important;
 }
 
+.contact {
+  align-items: center;
+  padding: 8rem;
+}
+.contact_text {
+  width: 40%;
+  line-height: 7rem;
+}
+.contact_text h2 {
+  font-size: 6rem;
+  background: linear-gradient(to right, #6366f1, #8B5CF6, #D946EF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+.contact_text p {
+  margin-top: 3rem;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.contact_form {
+  width: 50%;
+  line-height: 3rem;
+}
+.contact_form > :first-child {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contact_form > :first-child div {
+  width: inherit;
+}
+.contact_form > :first-child div input {
+  height: 3rem;
+  outline: none;
+  width: 95%;
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+  border: 1px solid #d4d7e5;
+}
+.contact_form > :last-child textarea {
+  width: 100%;
+  height: 6rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d4d7e5;
+  margin-bottom: 3rem;
+}
+.contact_form > :last-child button {
+  background-color: #4F46E5;
+  color: #ffffff;
+  border-color: #4F46E5;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0.75em 2em 0.75em 2em;
+  font-weight: 600;
+  padding: 1rem 4rem !important;
+  margin-top: 0.5rem;
+}
+
 @media only screen and (max-width: 767px) {
   .header_section {
     padding: 0 1rem;
@@ -766,5 +823,35 @@
   .about_section_contact_content > :first-child p {
     line-height: 3rem;
     font-size: 1rem;
+  }
+  .contact {
+    padding: 0rem;
+  }
+  .contact_text {
+    width: 100%;
+    text-align: center;
+    line-height: 5rem;
+  }
+  .contact_text h2 {
+    font-size: 3.5rem;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  }
+  .contact_text p {
+    margin-top: 0rem;
+    text-decoration: underline;
+    font-weight: 700;
+  }
+  .contact_form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contact_form > :first-child {
+    flex-wrap: wrap;
+  }
+  .contact_form > :last-child textarea {
+    margin-bottom: 0rem;
+  }
+  .contact_form > :last-child button {
+    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=styles.css.map */

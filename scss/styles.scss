@@ -695,6 +695,82 @@ $icon_bg: rgb(99,102, 241);
     }
 }
 
+// contact sections
+
+.contact{
+    align-items: center;
+    padding: 8rem;
+
+    &_text{
+        width: 40%;
+        line-height: 7rem;
+
+
+        h2{
+            font-size: 6rem;
+            background: linear-gradient(to right, #6366f1, #8B5CF6, #D946EF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(0,0,0,0);
+        }
+
+        p{
+            margin-top: 3rem;
+    text-decoration: underline;
+    font-weight: 700;
+        }
+    }
+
+
+
+    &_form{
+        width: 50%;
+        line-height: 3rem;
+
+
+        >:first-child{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            div{
+                width: inherit;
+                input{
+                    height: 3rem;
+                    outline: none;
+                    width: 95%;
+                    border-radius: 0.5rem;
+                    margin-bottom: 3rem;
+                    border: 1px solid #d4d7e5;;
+                }
+            }
+            
+
+        }
+        >:last-child{
+            // width: inherit;
+
+          
+                textarea{
+                    width: 100%;
+                    height: 6rem;
+                        border-radius: 0.5rem;
+                    border: 1px solid #d4d7e5;;
+                    margin-bottom: 3rem;
+                
+                 
+            }
+
+            
+
+            button{
+                @include Buttons;
+                padding: 1rem 4rem !important;
+                margin-top: .5rem;
+            }
+        }
+    }
+}
+
 // Media Queries
 
 @media only screen and (max-width:767px){
@@ -1084,6 +1160,67 @@ $icon_bg: rgb(99,102, 241);
                     font-size: 1rem;
                 }
     
+            }
+        }
+    }
+
+    .contact{
+       
+        padding: 0rem;
+    
+        &_text{
+            width: 100%;
+            text-align: center;
+            line-height: 5rem;
+    
+    
+            h2{
+                font-size: 3.5rem;
+               
+                -webkit-text-fill-color: rgba(0,0,0,0);
+            }
+    
+            p{
+                margin-top: 0rem;
+                text-decoration: underline;
+                font-weight: 700;
+            }
+        }
+    
+    
+    
+        &_form{
+            width: 90%;
+          margin: 0 auto;
+    
+    
+            >:first-child{
+            
+                flex-wrap: wrap;
+               
+    
+                 
+                
+    
+            }
+            >:last-child{
+                
+    
+              
+                    textarea{
+                       
+                        margin-bottom: 0rem;
+                    
+                     
+                }
+    
+                
+    
+                button{
+                    
+                    margin-bottom: 1rem;
+
+                }
             }
         }
     }
