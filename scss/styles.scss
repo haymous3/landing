@@ -508,15 +508,17 @@ $icon_bg: rgb(99,102, 241);
 
 
 .section_eight{
-    padding: 4rem 0 3rem 0;
+    padding: 1rem 0 3rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
   color: $white_color;
     background-color: #0b0f19 !important;
 
-    &_intro, &_navs, &_contact{
+    &_intro, &_navs, &_contacts{
         width: 30%;
+        text-align: center;
     }
 
 
@@ -524,12 +526,17 @@ $icon_bg: rgb(99,102, 241);
 
         &_logo{
             text-align: center;
-            width: 30%;
+            width: 60%;
             margin: 0 auto;
+
+            img{
+                width: 30%;
+            }
         }
         line-height: 2rem;
         p{
             padding-top: 2rem;
+            text-align: center
         }
         button{
             @include Buttons;
@@ -543,23 +550,32 @@ $icon_bg: rgb(99,102, 241);
             padding-left: 2rem;
             background: transparent;
             color: $white_color;
+            border: 2px solid $white_color;
         }
 
     }
 
     &_navs{
         ul{
-            height: 2.5rem;
-            width: 18rem;
-            border-radius: 0.5rem;
-            margin-top: 1rem;
-            border: transparent;
-            padding-left: 2rem;
-            list-style-type: none;
+           
+           line-height: 3rem;
+
+           list-style-type: none;
+           margin-top: 7rem;
+           
+      
             li{
-                color: $gray_color;
+                color: $white_color;
                 font-weight: bolder;
             }
+        }
+    }
+
+
+    &_contacts{
+        div{
+            margin-top: 5rem;
+            line-height: 2.2rem;
         }
     }
 
@@ -1218,23 +1234,24 @@ $icon_bg: rgb(99,102, 241);
     
         &_navs{
             ul{
-                height: 10rem;
-                line-height: 2.5rem;
-                width: 100%;
-                
-                
-                
-                padding-left: 0rem;
-    
+               
+               margin-top: 2rem;
+               
+          
                 li{
-                    color: $gray_color;
+                 
                     font-weight: bolder;
                 }
             }
         }
-
+    
+    
         &_contacts{
-            margin-top: 3rem;
+            width: 100%;
+            div{
+                margin-top: 2rem;
+                line-height: 2.2rem;
+            }
         }
     
     }
