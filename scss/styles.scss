@@ -521,6 +521,12 @@ $icon_bg: rgb(99,102, 241);
 
 
     &_intro{
+
+        &_logo{
+            text-align: center;
+            width: 30%;
+            margin: 0 auto;
+        }
         line-height: 2rem;
         p{
             padding-top: 2rem;
@@ -885,6 +891,32 @@ $icon_bg: rgb(99,102, 241);
 
 }
 
+
+
+// Terms and conditon
+
+
+.terms_condition{
+    background-image: url(../images/hero-bg.svg);
+    padding: 3rem 0;
+
+    &_details{
+        width: 70%;
+        margin: 0 auto;
+        line-height: 2rem;
+
+        h3{
+            padding-bottom: 2rem;
+        }
+
+        li, p{
+            padding-bottom: 2rem;
+        }
+    }
+   
+    
+}
+
 // Media Queries
 
 @media only screen and (max-width:767px){
@@ -1148,6 +1180,8 @@ $icon_bg: rgb(99,102, 241);
     .section_eight{
     text-align: center;
     
+
+       
         &_intro, &_navs, &_contact{
             width: 100%;
         }
@@ -1170,6 +1204,14 @@ $icon_bg: rgb(99,102, 241);
               border: 2px solid $white_color;
                 padding-left: 2rem;
                 
+            }
+
+            &_logo{
+                width: 100%;
+    
+                img{
+                    width: 50%;
+                }
             }
     
         }
@@ -1426,6 +1468,18 @@ $icon_bg: rgb(99,102, 241);
     
     
     }
+
+    .terms_condition{
+       
+    
+        &_details{
+            width: 80%;
+        
+        }
+       
+        
+    }
+    
 
    
    

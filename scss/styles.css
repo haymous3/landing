@@ -391,6 +391,11 @@
 .section_eight_intro {
   line-height: 2rem;
 }
+.section_eight_intro_logo {
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+}
 .section_eight_intro p {
   padding-top: 2rem;
 }
@@ -679,6 +684,22 @@
      object-fit: contain;
 }
 
+.terms_condition {
+  background-image: url(../images/hero-bg.svg);
+  padding: 3rem 0;
+}
+.terms_condition_details {
+  width: 70%;
+  margin: 0 auto;
+  line-height: 2rem;
+}
+.terms_condition_details h3 {
+  padding-bottom: 2rem;
+}
+.terms_condition_details li, .terms_condition_details p {
+  padding-bottom: 2rem;
+}
+
 @media only screen and (max-width: 767px) {
   .header_section {
     padding: 0 1rem;
@@ -864,6 +885,12 @@
     border: 2px solid #ffffff;
     padding-left: 2rem;
   }
+  .section_eight_intro_logo {
+    width: 100%;
+  }
+  .section_eight_intro_logo img {
+    width: 50%;
+  }
   .section_eight_navs ul {
     height: 10rem;
     line-height: 2.5rem;
@@ -997,5 +1024,8 @@
   }
   .sign_in_bg {
     display: none;
+  }
+  .terms_condition_details {
+    width: 80%;
   }
 }/*# sourceMappingURL=styles.css.map */
